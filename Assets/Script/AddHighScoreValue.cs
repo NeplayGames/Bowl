@@ -9,11 +9,9 @@ public class AddHighScoreValue : MonoBehaviour
     {
         GetHighScore();
     }
-
     public void GetHighScore()
     {
         if(HttpCookie.GetCookie("Score") != "")
         highScore.text = "High score : " +  HttpCookie.GetCookie("Score");
-
     }
 }
